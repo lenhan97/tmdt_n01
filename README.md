@@ -59,9 +59,10 @@ tmdt_n01
 ```
 
 Bước 4: Import file dữ liệu mới nhất nằm trong thư mục database vào cơ sở dữ liệu vừa tạo.
+Ví dụ:
 
 ```
-database/tmdt_n01.sql
+import file database/tmdt_n01.sql vào CSDL tmdt_n01
 ```
 
 Bước 5: Vào địa chỉ localhost/TMDT_N01 để kiểm tra (Nhớ mở Apache và MySQL)
@@ -78,6 +79,7 @@ localhost:8080/TMDT_N01
 ```
 
 Để khắc phục lỗi trên ta cần thực hiện các bước sau:
+
 1) Vào thư mục wp-config.php thêm 2 dòng code sau vào đầu file:
 
 Ví dụ địa chỉ của bạn để vào localhost là localhost:8080 thì ta viết:
