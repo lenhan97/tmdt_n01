@@ -1158,6 +1158,12 @@ li.product-category.product .count {
     display: block;
 }
 /* Single product css */
+.woocommerce .type-product div.woocommerce-tabs div.woocommerce-Tabs-panel--description {
+	background-color: #000000;
+}
+.woocommerce .type-product div.woocommerce-tabs div.woocommerce-Tabs-panel--description h2{
+	font-color: #ffffff;
+}
 .woocommerce div.product div.images img {
     padding: 5px;
     border: 1px solid #F1F1F1;
