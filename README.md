@@ -15,28 +15,32 @@ Project này mình chạy trên XAMPP nên sẽ hướng dẫn chủ yếu trên
 Webmaster:
 
 ```
-Username: admin
-Password: admin123
+Tài khoản đăng nhập: Username/Password
+admin / admin123
+Tài khoản Paypal để test: 
+ltshop_admin@gmail.com / admin123
 ```
 
 Account merchant:
 
 ```
-Username: merchantA
-Password: merchant1
-và
-Username: merchantB
-Password: merchant2
+Tài khoản đăng nhập: Username/Password
+merchantA / merchant1
+merchantB / merchant2
+Tài khoản Paypal để test: 
+ltshop_merchantA@gmail.com / merchant1
+ltshop_merchantB@gmail.com / merchant2
 ```
 
 Account customer:
 
 ```
-Username: customerX
-Password: customer1
-và
-Username: customerY
-Password: customer2
+Tài khoản đăng nhập: Username/Password
+customerX / customer1
+customerY / customer2
+Tài khoản Paypal để test: 
+ltshop_customerX@gmail.com / customer1
+ltshop_customerY@gmail.com / customer2
 ```
 
 ### Installing
