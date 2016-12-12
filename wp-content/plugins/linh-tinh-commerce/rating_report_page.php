@@ -74,7 +74,11 @@ function sinh_rating_report_page_init() {
 add_action('admin_menu', 'sinh_rating_report_setup_menu');
 
 function sinh_get_user_ratings_list() {
-    $posts = query_posts(array('meta_key' => 'ratings_average', 'orderby' => 'meta_value_num', 'order' => 'ASC'));
+    $posts = query_posts( array(
+    	'posts_per_page' => -1,
+    	'meta_key' => 'ratings_average', 
+    	'orderby' => 'meta_value_num', 
+    	'order' => 'ASC') );
     echo '</br>';
 	echo '<table class="table">
 	    <thead>
