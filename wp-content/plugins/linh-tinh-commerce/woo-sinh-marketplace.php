@@ -126,9 +126,7 @@ add_shortcode( 'sinh_view_rating', array('Woo_Sinh_Marketplace', 'sinh_create_vi
 // khác với trang wp-login
 // Chèn [Display_Disabled_Message] vào đầu trang login để nó hoạt động
 function Display_Message() {
-	if ( isset( $_GET['disabled'] ) && $_GET['disabled'] == 1 ) {
-	
-		
+	if ( isset( $_GET['disabled'] ) && $_GET['disabled'] == 1 ) {	
 		echo '<b>Your account has been disabled. Because: '. str_replace("+", " " , $_GET['disable_message']) .'</b>';		
 	}
 }
