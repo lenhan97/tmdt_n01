@@ -23,6 +23,9 @@ if ( ! class_exists('Woo_Sinh_Marketplace') ) {
 		public function sinh_auto_create_post() {
 			global $current_user;
 			get_currentuserinfo();
+			if ( $current_user->roles[0] == 'administrator' ) {
+			 	return; 
+			}
 			$category = get_category_by_slug( 'user-rating' );
 			if ( $category == false ) {
 				wp_insert_term( 'User Rating', 'category', array('slug' => 'user-rating') );
@@ -127,8 +130,9 @@ add_shortcode( 'sinh_view_rating', array('Woo_Sinh_Marketplace', 'sinh_create_vi
 // Chèn [Display_Disabled_Message] vào đầu trang login để nó hoạt động
 function Display_Message() {
 	if ( isset( $_GET['disabled'] ) && $_GET['disabled'] == 1 ) {	
-		echo '<b>Your account has been disabled. Because: '. str_replace("+", " " , $_GET['disable_message']) .'</b>';		
+		return '<b>Your account has been disabled. Because: '. str_replace("+", " " , $_GET['disable_message']) .'</b>';		
 	}
+	else return '';
 }
 add_shortcode('Display_Disabled_Message', 'Display_Message');
 

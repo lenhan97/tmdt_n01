@@ -1,0 +1,39 @@
+.clickable{
+	cursor: pointer;
+}
+.error{
+    border: 1px solid #b94a48!important;
+    background-color: #fee!important;
+}
+#fpm-product-container input, #fpm-product-container textarea{
+	width: 100%;
+	border-radius: 2px;
+    padding: 8px 6px;
+    border: 1px solid #c7c7c7;
+}
+#fpm-product-left{
+	margin-right: 20px;
+}
+#fpm-product-left, #fpm-product-right{
+	border: 1px solid #d3d3d3;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.nav-tabs>li.active{
+	font-weight: bold;
+}
+#added-attributes label{
+	width: 15%;
+	text-transform: capitalize;
+}
+#added-attributes input{
+	width: 60%;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+input[type="submit"]{
+	background: #0085ba;
+    border: 1px solid #0085ba!important;
+    box-shadow: none;
+    color: #fff;
+}
